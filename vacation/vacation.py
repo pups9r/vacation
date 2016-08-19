@@ -16,3 +16,13 @@ def plane_ride_cost(city):
         return 222
     elif city == 'Los Angeles':
         return 475
+
+
+def rental_car_cost(days):
+    car = 40 * days
+    if days >= 7:
+        car -= 50
+    elif days >= 3 and days < 7:
+        car -= 20
+
+    return car
